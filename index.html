@@ -1,0 +1,381 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lleva Ya | Productos en tendencia</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b5ed7;
+      color: white;
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 70px 8%;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: #0b5ed7;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 55px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #0b5ed7;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      background: #e9eef7;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .price {
+      color: #0b5ed7;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .catalogo {
+      background: #eef5ff;
+    }
+
+    .info-box {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 20px;
+    }
+
+    .faq details {
+      background: white;
+      margin-bottom: 12px;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    }
+
+    .faq summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #0b5ed7;
+    }
+
+    footer {
+      background: #0b5ed7;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: white;
+      padding: 16px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+        justify-content: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Lleva Ya</div>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#destacados">Destacados</a>
+      <a href="#pagos">Pagos</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Productos en tendencia para vender más</h1>
+    <p>
+      En <strong>Lleva Ya</strong> traemos productos novedosos desde China, Corea y Estados Unidos
+      para emprendedores, negocios y clientes finales. Ideal para quienes desean comprar, revender
+      o surtir su tienda online.
+    </p>
+
+    <a class="btn-whatsapp" href="https://wa.me/593XXXXXXXXX?text=Hola%20Lleva%20Ya,%20quiero%20información%20sobre%20sus%20productos" target="_blank">
+      Comprar por WhatsApp
+    </a>
+  </section>
+
+  <section id="destacados">
+    <h2>Productos destacados</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Producto destacado 1">
+        <h3>Accesorio en tendencia</h3>
+        <p>Producto ideal para venta online y redes sociales.</p>
+        <p class="price">Desde $9.99</p>
+        <a class="btn-whatsapp" href="https://wa.me/593XXXXXXXXX" target="_blank">Consultar</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Producto destacado 2">
+        <h3>Producto viral</h3>
+        <p>Artículo práctico, llamativo y fácil de comercializar.</p>
+        <p class="price">Desde $14.99</p>
+        <a class="btn-whatsapp" href="https://wa.me/593XXXXXXXXX" target="_blank">Consultar</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x180" alt="Producto destacado 3">
+        <h3>Pack para emprendedores</h3>
+        <p>Opción recomendada para negocios que desean revender.</p>
+        <p class="price">Cotizar</p>
+        <a class="btn-whatsapp" href="https://wa.me/593XXXXXXXXX" target="_blank">Solicitar precio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Accesorios tecnológicos</h3>
+        <p>Cables, gadgets, soportes, organizadores y productos útiles para el día a día.</p>
+      </div>
+
+      <div class="card">
+        <h3>Productos virales</h3>
+        <p>Artículos populares en redes sociales con alto potencial de venta.</p>
+      </div>
+
+      <div class="card">
+        <h3>Productos para revendedores</h3>
+        <p>Opciones por volumen para emprendedores, tiendas online y negocios locales.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pedidos bajo solicitud</h3>
+        <p>Buscamos productos específicos según la necesidad de tu negocio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pagos">
+    <h2>Métodos de pago</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Transferencia bancaria</h3>
+        <p>Aceptamos pagos mediante transferencia a cuentas nacionales.</p>
+      </div>
+
+      <div class="card">
+        <h3>Depósito</h3>
+        <p>Disponible para clientes que prefieren pagos directos en banco.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pago contra entrega</h3>
+        <p>Disponible según ciudad, cobertura y tipo de producto.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pago para pedidos B2B</h3>
+        <p>Para compras por volumen se puede manejar anticipo y saldo contra entrega.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="envios">
+    <h2>Políticas de envío</h2>
+
+    <div class="info-box">
+      <p>
+        Realizamos envíos a nivel nacional mediante empresas de transporte aliadas.
+        El costo del envío depende de la ciudad, tamaño del paquete y modalidad seleccionada.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <p>
+        Los pedidos disponibles en stock se despachan en un plazo estimado de 24 a 48 horas laborables.
+        Los pedidos bajo solicitud o importación pueden requerir tiempos adicionales.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <p>
+        El cliente recibirá la información del pedido y guía de envío una vez confirmado el despacho.
+      </p>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+
+    <div class="grid">
+      <div class="card">
+        <p>“Compré productos para revender y me ayudaron con opciones que sí se mueven en redes.”</p>
+        <h3>- Cliente emprendedor</h3>
+      </div>
+
+      <div class="card">
+        <p>“Buena atención, rápida respuesta por WhatsApp y productos novedosos.”</p>
+        <h3>- Cliente online</h3>
+      </div>
+
+      <div class="card">
+        <p>“Me gustó que ofrecen productos por volumen para mi negocio.”</p>
+        <h3>- Negocio aliado</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Venden al por mayor?</summary>
+      <p>Sí. Tenemos opciones para emprendedores, negocios y revendedores.</p>
+    </details>
+
+    <details>
+      <summary>¿Puedo pedir un producto específico?</summary>
+      <p>Sí. Podemos ayudarte a buscar productos en tendencia desde China, Corea o Estados Unidos.</p>
+    </details>
+
+    <details>
+      <summary>¿Hacen envíos a todo Ecuador?</summary>
+      <p>Sí. Realizamos envíos a nivel nacional según cobertura de las empresas de transporte.</p>
+    </details>
+
+    <details>
+      <summary>¿Cómo confirmo mi pedido?</summary>
+      <p>Debes contactarnos por WhatsApp, indicar el producto, cantidad, ciudad y método de pago.</p>
+    </details>
+
+    <details>
+      <summary>¿Tienen productos para iniciar un negocio?</summary>
+      <p>Sí. Te podemos recomendar productos con potencial de venta para redes sociales y tiendas online.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p><strong>Lleva Ya</strong> | Productos en tendencia para comprar, vender y emprender</p>
+    <p>Ambato, Ecuador</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/593XXXXXXXXX?text=Hola%20quiero%20comprar%20productos%20de%20Lleva%20Ya" target="_blank">
+    WhatsApp
+  </a>
+
+</body>
+</html>
